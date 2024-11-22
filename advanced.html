@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokročílý vyhledávání</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="images.html">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" class="nav-link">Zpátky k vyhledávání</a>
+    </div>
+
+    <div class="search-section">
+        <form action="https://www.google.com/search" method="GET">
+            <div class="form-group">
+                <label for="all-words">Najdi stránky <strong>se všemi slovy:</strong></label>
+                <input type="text" name="as_q" id="all-words" class="advanced-input">
+            </div>
+            <div class="form-group">
+                <label for="exact-word">Najdi stránky <strong>s přesnými slovy:</strong></label>
+                <input type="text" name="as_epq" id="exact-word" class="advanced-input">
+            </div>
+            <div class="form-group">
+                <label for="any-words">Najdi stránky <strong>obsahují slova:</strong></label>
+                <input type="text" name="as_oq" id="any-words" class="advanced-input">
+            </div>
+            <div class="form-group">
+                <label for="none-words">Najdi stránky <strong>které neobsahují:</strong></label>
+                <input type="text" name="as_eq" id="none-words" class="advanced-input">
+            </div>
+            <button type="submit" class="advanced-button">Vyhledat</button>
+        </form>
+    </div>
+</body>
+</html>
